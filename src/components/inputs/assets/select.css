@@ -1,0 +1,67 @@
+.select-field{
+    margin-top: 20px;
+}
+.select-field select {
+    display: block;
+    width: 100%;
+    height: calc(2.5rem + 3px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #C4C4C4;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 8px;
+    outline: none;
+}
+.select-field select:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.select-field select:disabled,
+.select-field select[readonly] {
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+.select-field {
+    position: relative;
+}
+.select-field select {
+    height: calc(2.5rem + 3px);
+    padding: 0.5rem 0.75rem;
+}
+.select-field label {
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    display: flex;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border: none;
+    background-color: #fff;
+    color: #757575;
+    font-size: 15px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
+}
+/*.select-field select::-moz-placeholder {*/
+/*    color: transparent;*/
+/*}*/
+
+/*.select-field select::placeholder {*/
+/*    color: transparent;*/
+/*}*/
+.select-field select:focus~label,
+.select-field select:not(:placeholder-shown)~label
+{
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+}

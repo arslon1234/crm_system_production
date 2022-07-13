@@ -1,0 +1,174 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form_group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 12px 100px;
+  background: #217cae;
+  border-radius: 100px;
+}
+
+.login_logo img {
+  width: 150px;
+  height: 120px;
+  padding-bottom: 12px;
+}
+
+.login_inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.login_inputs p {
+  font-style: normal;
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 15px 0 10px 0;
+}
+
+.forms {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 45px;
+}
+
+.forms input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 50%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #80c7ec;
+}
+
+.forms img {
+  width: 20px;
+  height: 20px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.login_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+}
+
+.login_buttons button {
+  background: #074b71;
+  border-radius: 45px;
+  width: 70%;
+  height: 38px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.invalid-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .form_group {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .login_logo img {
+    width: 200px;
+    height: 180px;
+  }
+  .forms {
+    width: 375px;
+  }
+}
+
+@media (max-width:375px) {
+  .forms {
+    width: 280px;
+    height: 35px;
+  }
+  .login_logo img {
+    width: 120px;
+    height: 120px;
+  }
+  .forms img {
+    width: 18px;
+    height: 18px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  .login_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 47px;
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+  }
+  .forms input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 50%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #80c7ec;
+  }
+  .invalid-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: red;
+  }
+  .login_buttons button {
+    background: #074b71;
+    border-radius: 47px;
+    width: 80%;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
